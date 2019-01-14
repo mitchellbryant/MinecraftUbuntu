@@ -15,6 +15,13 @@ sudo apt update -y
 
 sudo apt install wget screen default-jdk nmap -y
 
+#adding a 2GB swap file
+sudo fallocate -l 1G /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo cp /etc/fstab /etc/fstab.bak
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+
 sudo useradd -m -r -d /opt/minecraft minecraft
 
 sudo mkdir /opt/minecraft/survival
@@ -27,11 +34,9 @@ sudo bash -c "echo eula=true > /opt/minecraft/survival/eula.txt"
 
 sudo chown -R minecraft /opt/minecraft/survival/
 
-cd /opt/minecraft/survival
-
 sudo apt install screen
 
-sudo java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
+sudo java -Xmx1024M -Xms250M -jar /opt/minecraft/survival/minecraft_server.jar nogui
 
 
 #run screen
