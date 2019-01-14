@@ -6,13 +6,14 @@
 # INSTRUCTIONS:
 # 1. Copy this shell script to your home directory or the /tmp directory.
 # 2. Make it executable with the following command: 
-#      chmod a+x mcraft.sh
+#      sudo chmod a+x mcraft.sh
 # 3. Execute the script as a sudo user:
 #      sudo ./mcraft.sh
 
-sudo apt update
+#add git
+sudo apt update -y
 
-sudo apt install wget screen default-jdk nmap
+sudo apt install wget screen default-jdk nmap -y
 
 sudo useradd -m -r -d /opt/minecraft minecraft
 
