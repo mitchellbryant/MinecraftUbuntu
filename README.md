@@ -15,7 +15,7 @@ cd into the new directory:
 ```
 cd MinecraftUbuntu
 ```
-Make the script executable with the following command: 
+Make the script executable: 
 ```
 sudo chmod a+x mcraft.sh
 ```
@@ -27,7 +27,7 @@ Once the script completes, cd to the minecraft directory:
 ```
 cd /opt/minecraft/survival
 ```
-### You are now ready to run the server. 
+### You are now ready to run the server 
 Run screen (this will allow your server to continue to run when you disconnect from the session)
 ```
 screen
@@ -49,7 +49,7 @@ Once you see "Done" on the console, your server is running and you can login to 
 More simply put, hold down CONTROL and press A, let go of both, and then press D
 You can now close your Terminal/PuTTY SSH session, and your Minecraft server will continue to run.
 
-### Reataching from your Minecraft's console screen
+### Reattaching from your Minecraft's console screen
 If you need to reattach to the console screen to run commands on your Minecraft server, run the command below:
 ```
 screen -r
