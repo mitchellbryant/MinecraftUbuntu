@@ -40,11 +40,22 @@ Alternatively, if you would like to tweak the RAM amount, you can run the comman
 ```
 sudo java -Xmx1024M -Xms650M -jar minecraft_server.jar nogui
 ```
-Once you see "Done" on the console, your server is running and you can login to Minecraft via Direct Connect using your Ubuntu server IP
+Once you see "Done" on the console, your server is running and you can login to Minecraft via Direct Connect using your Ubuntu server IP. Keep in mind that if you close or disconnect from your Terminal/PuTTY SSH session, your Minecraft server will shut down. To avoid this, you will need to detach from the from screen. Instructions are below.
 
+### Detaching from your Minecraft's console screen
+```
+{Ctrl + a}, and then {d}
+```
+More simply put, hold down CONTROL and press A, let go of both, and then press D
+You can now close your Terminal/PuTTY SSH session, and your Minecraft server will continue to run.
 
+### Reataching from your Minecraft's console screen
+If you need to reattach to the console screen to run commands on your Minecraft server, run the command below:
+```
+screen -r
+```
 
-## List of Minecraft Server commands
+## List of Minecraft Server Console Commands
 1.  /achievement – The “achievement” command is used to mark player achievements or increase statistics. The command can only be performed by an Op. A full “achievement” command will appear as follows:
 
 /achievement <give|take> <stat_name|*> [player]
