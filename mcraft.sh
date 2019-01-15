@@ -36,7 +36,9 @@ sudo chown -R minecraft /opt/minecraft/survival/
 
 sudo apt install screen
 
-sudo java -Xmx1024M -Xms650M -jar /opt/minecraft/survival/minecraft_server.jar nogui
+cd /opt/minecraft/survival
+
+sudo java -Xmx1024M -Xms650M -jar minecraft_server.jar nogui
 
 
 #run screen
