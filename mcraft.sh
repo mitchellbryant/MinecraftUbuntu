@@ -16,7 +16,7 @@ sudo apt update -y
 sudo apt install wget screen default-jdk nmap -y
 
 #adding a 2GB swap file
-sudo fallocate -l 1G /swapfile
+sudo fallocate -l 2G /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 sudo cp /etc/fstab /etc/fstab.bak
@@ -36,7 +36,7 @@ sudo chown -R minecraft /opt/minecraft/survival/
 
 sudo apt install screen
 
-sudo java -Xmx1024M -Xms250M -jar /opt/minecraft/survival/minecraft_server.jar nogui
+sudo java -Xmx1024M -Xms650M -jar /opt/minecraft/survival/minecraft_server.jar nogui
 
 
 #run screen
