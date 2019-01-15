@@ -11,7 +11,25 @@ sudo apt-get install git
 ```
 git clone https://github.com/mitchellbryant/MinecraftUbuntu.git
 ```
-Make it executable with the following command: 
+cd into the new directory:
+```
+cd MinecraftUbuntu
+```
+Make the script executable with the following command: 
 ```
 sudo chmod a+x mcraft.sh
 ```
+Execute the script:
+```
+sudo ./mcraft.sh
+```
+Once the script completes, cd to the minecraft directory:
+```
+cd /opt/minecraft/survival
+```
+### You are now ready to run the server. 
+Run screen (this will allow your server to continue to run when you disconnect from the session)
+```
+screen
+```
+Press Enter/Return again
