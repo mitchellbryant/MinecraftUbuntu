@@ -36,9 +36,15 @@ Press Enter/Return again, and then run the server with the command below:
 ```
 sudo ./runserver.sh
 ```
+Alternatively, if you would like to tweak the RAM amount, you can run the command below, adjusting the Xmx value for maximum RAM, and Xms for minimum RAM:
+```
+sudo java -Xmx1024M -Xms650M -jar minecraft_server.jar nogui
+```
+Once you see "Done" on the console, your server is running and you can login to Minecraft via Direct Connect using your Ubuntu server IP
 
 
 
+## List of Minecraft Server commands
 1.  /achievement – The “achievement” command is used to mark player achievements or increase statistics. The command can only be performed by an Op. A full “achievement” command will appear as follows:
 
 /achievement <give|take> <stat_name|*> [player]
